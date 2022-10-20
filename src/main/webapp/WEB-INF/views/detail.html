@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+      <th>STT</th>
+    <th>Name</th>
+    <th>Address</th>
+  </tr>
+  <tr th:object="${customer}">
+      <td th:utext="${customer.getId()}"></td>
+    <td th:utext="${customer.getName()}"></td>
+    <td th:utext="${customer.getAddress()}"></td>
+  </tr>
+    <a href="/">back list</a>
+</table>
+
+</body>
+</html>
